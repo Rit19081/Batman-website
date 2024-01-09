@@ -1,0 +1,81 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The End</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="128x128"
+      href="../Images/batman-01-logo-png-transparent.png"
+    />
+    <style>
+      body {
+        background-color: black;
+        color: red;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        margin: 0;
+      }
+
+      h1 {
+        margin-bottom: 20px;
+      }
+
+      #myVideo {
+        display: none;
+        height: 1280px;
+        width: 720px;
+      }
+
+      #endButton {
+        background-color: #ff0000;
+        color: white;
+        padding: 10px 20px;
+        font-size: 16px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+      #endButton {
+        transition: all ease 0.5s;
+        scale: 1;
+      }
+      #startButton:hover {
+        scale: 1.3;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>
+      Congratulations for winning the game. Now click the button to End The
+      Batman game
+    </h1>
+    <button id="endButton" onclick="endGame()">End the Game</button>
+    <video id="myVideo" controls onended="openWebsite()">
+      <source
+        src="Credits/The Joker Makes Batman Laugh - Batman- The Killing Joke (online-video-cutter.com).mp4"
+        type="video/mp4"
+      />
+      Your browser does not support the video tag.
+    </video>
+
+    <script>
+      function endGame() {
+        const startButton = document.getElementById("endButton");
+        const video = document.getElementById("myVideo");
+        video.style.display = "block";
+        startButton.style.display = "none";
+        video.play();
+      }
+
+      function openWebsite() {
+        window.location.href = "YN.html";
+      }
+    </script>
+  </body>
+</html>

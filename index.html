@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Batman</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/png" sizes="128x128" href="Images/batman-01-logo-png-transparent.png">
+  </head>
+  <body>
+    <div id="nav">
+      <img src="Images/the_batman__2022__logo_png__by_mintmovi3_de3mn3j-fullview.png" alt="" />
+      <h4><a href="index.html">Home</a></h4>
+      <h4><a href="RPS/index.html">Play with Joker</a></h4>
+      <h4><a href="About us/about.html">About</a></h4>
+    </div>
+    <div id="cursor"></div>
+    <div id="cursor-blur">
+    </div>
+    <div id="cursor-bat">
+      <img src="Images/pngimg.com - batman_PNG64.png" alt="">
+    </div>
+    <video id="myVideo" autoplay loop muted>
+      <source src="Videos/BATMAN EDIT - WAKE UP (online-video-cutter.com).mp4">
+    </video>
+    <audio id="backgroundAudio" loop>
+      <source src="RPS/Audio/The Batman Bgm Ringtone.mp3" type="audio/mp3">
+    </audio>
+    <div id="main">
+      <div id="page1">
+        <h1>Hello Guys!</h1>
+        <h2>Welcome to The Batman website</h2>
+        <br>
+        <button onclick="playPause()">Want Some BGM?</button>
+      </div>
+      <div id="page2">
+        <div id="scroller">
+          <div id="scroller-in">
+            <h4>i am vengeance!</h4>
+            <h4>i am the night!</h4>
+            <h4>i am batman!</h4>
+          </div>
+          <div id="scroller-in">
+            <h4>i am vengeance!</h4>
+            <h4>i am the night!</h4>
+            <h4>i am batman!</h4>
+          </div>
+        </div>
+        <div id="about-batman">
+          <img src="Images/1.png" alt="" />
+          <div id="batman">
+            <h3>About Batman</h3>
+            <p>
+              Batman is a superhero appearing in American comic books published
+              by DC Comics. The character was created by artist Bob Kane and
+              writer Bill Finger, and debuted in the 27th issue of the comic
+              book Detective Comics on March 30, 1939.
+            </p>
+          </div>
+          <img src="Images/1 flip.png" alt="" />
+        </div>
+        <div class="cards-container">
+          <div class="cards" id="card1">
+            <div class="overlay">
+              <h4>Christian Bale</h4>
+              <p>
+                Christian Charles Philip Bale is an English actor. Known for his
+                versatility and physical transformations for his roles, he has
+                been a leading man in films of several genres.
+              </p>
+            </div>
+          </div>
+          <div class="cards" id="card2">
+            <div class="overlay">
+              <h4>Ben Affleck</h4>
+              <p>
+                Benjamin Géza Affleck is an American actor and filmmaker. His
+                accolades include two Academy Awards, two BAFTA Awards, and
+                three Golden Globes.
+              </p>
+            </div>
+          </div>
+          <div class="cards" id="card3">
+            <div class="overlay">
+              <h4>Robert Pattinson</h4>
+              <p>
+                Robert Douglas Thomas Pattinson is an English actor. Known for
+                starring in both big-budget and independent films, Pattinson has
+                ranked among the world's highest-paid actors.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div id="red-div">
+          <img src="Images/flying-bats-silhouette-8770.png" alt="" />
+          <h4>
+            "It's not who I am underneath, but what I do that defines me. "
+          </h4>
+          <img src="Images/flying-bats-silhouette-8770.png" alt="" />
+        </div>
+      </div>
+      <div id="page-3">
+        <p>
+          Sometimes the truth isn’t good enough, sometimes people deserve more.
+          Sometimes people deserve to have their faith rewarded.
+        </p>
+        <img id="colon1" src="Images/pngwing.com (1).png" alt="">
+        <img id="colon2" src="Images/pngwing.com.png" alt="">
+      </div>
+      <div id="page-4">
+        <h1>What are you waiting for?</h1>
+        <div class="elem">
+          <h2>Bat Mobile</h2>
+          <img src="Images/The-batman-s-original-car-vision-differs-slightly-from-the-batmobile-in-reality_8.jpg" alt="">
+        </div>
+        <div class="elem">
+          <h2>Bat Signal</h2>
+          <img src="Images/39c16ff420c7bad2e46cb1a683f6d50c.webp" alt="">
+        </div>
+        <div class="elem">
+          <h2>Bat Cycle</h2>
+          <img src="Images/BATMAN_GRADE_AT_001_BATCYCLE_AT_001_011_2022-03-06_14.09.33.jpg" alt="">
+        </div>
+      </div>
+      <div id="footer">
+        
+        <div id="f1">
+          <img
+            src="Images/the-batman-logo-56EDD94A84-seeklogo.com.png"
+            alt=""
+          />
+        </div>
+        <div id="f2">
+          <h3>The Batman</h3>
+          <h3>The Dark Knight</h3>
+          <h3>Batman vs Superman</h3>
+        </div>
+        <div id="f3">
+          <h3>Bat mobile</h3>
+          <h3>Bat signal</h3>
+          <h3>Bat cycle</h3>
+        </div>
+        <div id="f4">
+          <h4>
+            Contact us <br />
+            About us<br />
+          </h4>
+      </div>
+    </div>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/gsap.min.js"
+      integrity="sha512-EZI2cBcGPnmR89wTgVnN3602Yyi7muWo8y1B3a8WmIv1J9tYG+udH4LvmYjLiGp37yHB7FfaPBo8ly178m9g4Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/ScrollTrigger.min.js"
+      integrity="sha512-OzC82YiH3UmMMs6Ydd9f2i7mS+UFL5f977iIoJ6oy07AJT+ePds9QOEtqXztSH29Nzua59fYS36knmMcv79GOg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>

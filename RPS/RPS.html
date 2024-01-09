@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Play with Joker</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/png" sizes="128x128" href="../Images/batman-01-logo-png-transparent.png">
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <video autoplay loop muted  class="bg">
+      <source src="Credits/BG.mp4" type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
+    <div id="game-container">
+      <h1><a href="../index.html" style="text-decoration: none;">Return to main page</a></h1>
+      <h1>Rock Paper Scissors(Punch Slap Batarang)</h1>
+      <p>
+        You are The Batman and your opponent is The Joker.<br> 
+        Here Stone is Punch, Paper is Slap and
+        scissors are Batarang. <br>
+      </p>
+      <h1>let the battle begins.</h1>
+      <h1>To Win this game you need 5 points</h1>
+      <div id="choices">
+        <img
+          src="Images/is-there-a-lore-reason-batman-is-punching-you-are-you-a-v0-wf64j9brjsva1.png"
+          alt="Rock"
+          onclick="makeChoice('rock')"
+        />
+        <img
+          src="Images/Batman-slapping-Robin-Meme-Blank.png"
+          alt="Paper"
+          onclick="makeChoice('paper')"
+        />
+        <img
+          src="Images/Batarang03.jpg"
+          alt="Scissors"
+          onclick="makeChoice('scissors')"
+        />
+      </div>
+      <div id="scoreboard">
+        <strong>Score:</strong> Wins: <span id="wins">0</span>, Losses:
+        <span id="losses">0</span>, Ties: <span id="ties">0</span>        
+      </div>
+      <br>
+      <div id="result"></div>
+      <div id="video-container">
+        <video id="video" width="800" height="400">
+          <source src="" type="video/mp4" />
+        </video>
+      </div>
+    </div>
+  </body>
+</html>
